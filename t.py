@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import l14
-b = ['aab', 'ab', 'abaab', 'ab', 'aabbaab']
-test = l14.Solution()
-out = test.longestCommonPrefix(b)
+import l20
+b = "[({(())}[()])]"
+test = l20.Solution()
+out = test.isValid(b)
 print out
+
