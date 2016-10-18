@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import l20
-b = "[({(())}[()])]"
+b = ""
 test = l20.Solution()
 out = test.isValid(b)
 print out
