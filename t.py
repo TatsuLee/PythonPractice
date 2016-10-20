@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 
 
-import l43
+import l50
 
-a,b='123','233'
+a,b=0.1, 26 
 print 'input:',[a,b]
-print 'true ans:', int(a)*int(b)
-test = l43.Solution()
-out = test.multiply(a,b)
+print 'true ans:', a**b
+test = l50.Solution()
+out = test.myPow(a,b)
 print 'output:',out
 
