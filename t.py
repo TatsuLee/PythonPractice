@@ -1,13 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import l60
 
-
-import l50
-
-a,b=0.1, 26 
-print 'input:',[a,b]
-print 'true ans:', a**b
-test = l50.Solution()
-out = test.myPow(a,b)
-print 'output:',out
-
+n, k = 2, 1 
+print 'input:', [n, k]
+# print 'true ans:', a**b
+test = l60.Solution()
+out = test.getPermutation(n, k)
+print 'output:', out
