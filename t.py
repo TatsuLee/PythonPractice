@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import l60
+import l66
 
-n, k = 2, 1 
-print 'input:', [n, k]
+a = [9, 9, 9]
+print 'input:', a
 # print 'true ans:', a**b
-test = l60.Solution()
-out = test.getPermutation(n, k)
+test = l66.Solution()
+out = test.plusOne(a)
 print 'output:', out
