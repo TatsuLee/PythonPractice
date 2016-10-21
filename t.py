@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import l66
+import l67
 
-a = [9, 9, 9]
-print 'input:', a
+a, b = '11', '1'
+print 'input:', [a, b]
 # print 'true ans:', a**b
-test = l66.Solution()
-out = test.plusOne(a)
+test = l67.Solution()
+out = test.addBinary(a,b)
 print 'output:', out
