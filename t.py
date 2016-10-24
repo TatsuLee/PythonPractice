@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import l67
+import l69, math
 
-a, b = '11', '1'
-print 'input:', [a, b]
-# print 'true ans:', a**b
-test = l67.Solution()
-out = test.addBinary(a,b)
+a = 129  
+print 'input:', a
+print 'true ans:', int(math.sqrt(a))
+test = l69.Solution()
+out = test.mySqrt(a)
 print 'output:', out
