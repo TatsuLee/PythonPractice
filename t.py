@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import l69, math
 
-a = 129  
-print 'input:', a
-print 'true ans:', int(math.sqrt(a))
-test = l69.Solution()
-out = test.mySqrt(a)
+
+import l166
+a, b = 4, 333 
+print 'input:', [a, b]
+print 'true ans:', a*1.0/b
+test = l166.Solution()
+out = test.fractionToDecimal(a, b)
 print 'output:', out
