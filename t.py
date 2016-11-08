@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 
-import l202
+import l204
 n = 1 
 print 'input:', n
-print 'true ans:', True 
-test = l202.Solution()
-out = test.isHappy(n)
+print 'true ans:', 2 
+test = l204.Solution()
+out = test.countPrimes(n)
 print 'output:', out
