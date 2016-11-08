@@ -2,10 +2,11 @@
 # -*- coding: utf-8 -*-
 
 
-import l166
-n, d = 0,-333
-print 'input:', [n, d]
-print 'true ans:', float(n)/d
-test = l166.Solution()
-out = test.fractionToDecimal(n, d)
+import l172
+import math
+n = 10 
+print 'input:', n
+print 'true ans:', math.factorial(n)
+test = l172.Solution()
+out = test.trailingZeroes(n)
 print 'output:', out
