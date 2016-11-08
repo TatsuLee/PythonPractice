@@ -2,11 +2,10 @@
 # -*- coding: utf-8 -*-
 
 
-import l172
-import math
-n = 10 
+import l202
+n = 1 
 print 'input:', n
-print 'true ans:', math.factorial(n)
-test = l172.Solution()
-out = test.trailingZeroes(n)
+print 'true ans:', True 
+test = l202.Solution()
+out = test.isHappy(n)
 print 'output:', out
