@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 
-import l169
-a = 'ZZ' 
-print 'input:', a
-print 'true ans:', a
-test = l169.Solution()
-out = test.titleToNumber(a)
+import l166
+n, d = 0,-333
+print 'input:', [n, d]
+print 'true ans:', float(n)/d
+test = l166.Solution()
+out = test.fractionToDecimal(n, d)
 print 'output:', out

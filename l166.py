@@ -8,18 +8,26 @@ class Solution(object):
         """
         :type numerator: int
         :type denominator: int
-        :rtype: str
+        :rtype string: str
         """
-        string = str(numerator*1.0/denominator)
-        dot = string.find('.')
-        integer = string[:dot+1]  # with decimal point
-        frac = string[dot+1:]
-        if len(frac) < 12:
+        if numerator == 0:
+            return '0'
+        n, d = abs(numerator), abs(denominator)
+        string = str(n/d)
+        if (numerator < 0) ^ (denominator < 0):
+            string = '-' + string
+        r = n % d
+        if r == 0:
             return string
-        for i in [0, 1, 2]:
-            for j in [None, -1]:
-                s = frac[i:j]
-                repos = (s+s).find(s, 1, -1)
-                if repos != -1:
-                    return integer+frac[:i]+'('+s[:repos]+')'
-        return string
+        else:
+            string += '.'
+        rlist, fracstr = [r], ''
+        while r:
+            index = rlist.index(r)
+            if index != len(rlist)-1:
+                fracstr = fracstr[:index] + '(' + fracstr[index:] + ')'
+                break
+            fracstr += str(r*10/d)
+            r = r*10 % d
+            rlist.append(r)
+        return string + fracstr
