@@ -9,7 +9,9 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
-        if n <= 0:
+        if (n <= 0):
+            return False
+        if (n > 1) & (n % 2 > 0):
             return False
         for shift in range(32):
             if 1 << shift == n:
