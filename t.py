@@ -2,10 +2,11 @@
 # -*- coding: utf-8 -*-
 
 
-import l264
-n = 1 
+import l268
+n = [45,35,38,13,12,23,48,15,44,21,43,26,6,37,1,19,22,3,11,32,4,16,28,49,29,36,33,8,9,39,46,17,41,7,2,5,27,20,40,34,30,25,47,0,31,42,24,10,14] 
+n.sort()
 print 'input:', n
-print 'true ans:', 16 
-test = l264.Solution()
-out = test.nthUglyNumber(n)
+print 'true ans:', 18 
+test = l268.Solution()
+out = test.missingNumber(n)
 print 'output:', out
