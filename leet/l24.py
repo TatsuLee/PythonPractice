@@ -16,15 +16,15 @@ class Solution(object):
         if head is None or head.next is None:
             return head
         # create a fake head
-        dummy = ListNode(0)
+        dummy = ListNode(None)
         dummy.next = head
-        p = dummy
-        while p.next and p.next.next:
-            # swap
-            tmp = p.next.next
-            p.next.next = tmp.next
-            tmp.next = p.next
-            # link p with node number 2
-            p.next = tmp
-            p = p.next.next
+        pHead = dummy
+        while pHead.next and pHead.next.next:
+            # swap node1 with node2
+            node2 = pHead.next.next
+            pHead.next.next = node2.next  # link node1 to node3
+            node2.next = pHead.next  # link node2 to node1
+            pHead.next = node2  # link head to node2
+            # move pHead to node2
+            pHead = pHead.next.next
         return dummy.next

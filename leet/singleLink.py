@@ -8,6 +8,14 @@ class Node(object):
         self.val = val
         self.next = next
 
+    def show(self):
+        print "Showing list:"
+        current_node = self
+        while current_node is not None:
+            print current_node.val, "->",
+            current_node = current_node.next
+        print None
+
 
 class SingleList(object):
 
