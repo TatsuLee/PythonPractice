@@ -2,10 +2,22 @@
 # -*- coding: utf-8 -*-
 
 
-import l26
-n = [1,2,3,3,3,4,4,4]
+import l27
+n =nums = [3,2,3,3,3,4,4,4]
+val = 3
 print 'input:', n
-print 'true ans:', len(set(n))
-test = l26.Solution()
-out = test.removeDuplicates(n)
-print 'output:', out
+n.remove(3)
+print 'true ans:', n
+test = l27.Solution()
+out = test.removeElement(n,3)
+print 'output:', n[:out] 
+
+print 'test:'
+m, n = 0, len(nums)
+for i in range(n):
+    if nums[i] == val:
+        continue
+    else:
+        nums[m] = nums[i]
+        print nums
+        m += 1
