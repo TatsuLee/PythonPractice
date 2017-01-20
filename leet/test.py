@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 
 
-import l28
-n = 'abccc'
-val = 'ccc' 
-print 'input:', [n, val]
-print 'true ans:', 2 
-test = l28.Solution()
-out = test.strStr(n,val)
-print 'output:', out 
+import l31
+# n = [5, 4, 3, 6, 9, 6,8,7,1 ]
+n = [5, 4, 3,1]
+print 'input:', n
+print 'true ans:', 'whatever'
+test = l31.Solution()
+out = test.nextPermutation(n)
+print 'output:', n
 
 
