@@ -2,13 +2,12 @@
 # -*- coding: utf-8 -*-
 
 
-import l35
-# n = [5, 4, 3, 6, 9, 6,8,7,1 ]
-n,m = [1,2,3,4,6,8], 5 
+import l39
+n,m = [1,2], 4 
 print 'input:', (n,m)
 print 'true ans:', 'whatever'
-test = l35.Solution()
-out = test.searchInsert(n,m)
+test = l39.Solution()
+out = test.combinationSum(n,m)
 print 'output:', out 
 
 
