@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 
 
-import l49
-n = ["eat", "tea", "tan", "ate", "nat", "bat"]
-n = ["tea","and","ate","eat","dan"]
-n = ['yup', '', 'yup', '', 'pup']
+import l54
+n = [[1,2,3],[4,5,6],[7,8,9]]
+n = [[1,2]]
+n = []
 print 'input:', n
 print 'true ans:', 'whatever'
-test = l49.Solution()
-out = test.groupAnagrams(n)
+test = l54.Solution()
+out = test.spiralOrder(n)
 print 'output:', out 
