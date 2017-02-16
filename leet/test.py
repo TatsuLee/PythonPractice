@@ -2,14 +2,12 @@
 # -*- coding: utf-8 -*-
 
 
-import l48
-n = [[1, 1, 1,1], [2, 2, 2,2], [3, 3, 3,3], [4, 4, 4,4]]
-n = [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
-n = [[1, 1], [2, 2]]
+import l49
+n = ["eat", "tea", "tan", "ate", "nat", "bat"]
+n = ["tea","and","ate","eat","dan"]
+n = ['yup', '', 'yup', '', 'pup']
 print 'input:', n
 print 'true ans:', 'whatever'
-test = l48.Solution()
-out = test.rotate(n)
-print 'output:', n 
-
-
+test = l49.Solution()
+out = test.groupAnagrams(n)
+print 'output:', out 
