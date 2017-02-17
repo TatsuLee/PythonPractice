@@ -2,10 +2,9 @@
 # -*- coding: utf-8 -*-
 
 
-import l55
-n = [2,3,1,0,0]
+import l58
+n = 'Hello world a '
 print 'input:', n
-print 'true ans:', 'whatever'
-test = l55.Solution()
-out = test.canJump(n)
-print 'output:', out 
+test = l58.Solution()
+out = test.lengthOfLastWord(n)
+print 'output:',out 
