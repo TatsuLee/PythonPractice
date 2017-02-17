@@ -2,12 +2,10 @@
 # -*- coding: utf-8 -*-
 
 
-import l54
-n = [[1,2,3],[4,5,6],[7,8,9]]
-n = [[1,2]]
-n = []
+import l55
+n = [2,3,1,0,0]
 print 'input:', n
 print 'true ans:', 'whatever'
-test = l54.Solution()
-out = test.spiralOrder(n)
+test = l55.Solution()
+out = test.canJump(n)
 print 'output:', out 
