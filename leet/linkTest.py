@@ -4,10 +4,10 @@
 
 
 import singleLink
-import l24
+import l61
 
 # init linked list
-inputList = [1, 3, 5]
+inputList, k = [1,2,3,4,5],11 
 head = singleLink.Node(inputList[0], None)
 current = head
 for i in inputList[1:]:
@@ -18,7 +18,7 @@ print 'input'
 head.show()
 
 # run the code
-test = l24.Solution()
-output = test.swapPairs(head)
+test = l61.Solution()
+output = test.rotateRight(head, k)
 print 'output'
 output.show()

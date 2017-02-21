@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 
-import l58
-n = 'Hello world a '
+import l62
+m, n = 0,1 
 print 'input:', n
-test = l58.Solution()
-out = test.lengthOfLastWord(n)
+test = l62.Solution()
+out = test.uniquePaths(m, n)
 print 'output:',out 
