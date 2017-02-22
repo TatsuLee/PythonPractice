@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 
-import l62
-m, n = 0,1 
+import l63
+n = [[1, 0]]
 print 'input:', n
-test = l62.Solution()
-out = test.uniquePaths(m, n)
+test = l63.Solution()
+out = test.uniquePathsWithObstacles(n)
 print 'output:',out 

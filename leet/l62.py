@@ -8,11 +8,8 @@ class Solution(object):
         """
         if m*n == 0:
             return 0
-        dp = [[0 for k in range(n)] for k in range(m)]
-        # init boundary condition
-        dp[0] = [1 for k in range(n)]
-        for k in range(m):
-            dp[k][0] = 1
+        # dp_ij be num of paths to node ij
+        dp = [[1 if i*j == 0 else 0 for j in range(n)] for i in range(m)]
         # forward calulating using difference equations
         for i in range(1, m):
             for j in range(1, n):
