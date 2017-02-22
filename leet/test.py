@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 
-import l63
-n = [[1, 0]]
+import l64
+n = [[1, 2, 1], [0, 1, 3]]
 print 'input:', n
-test = l63.Solution()
-out = test.uniquePathsWithObstacles(n)
-print 'output:',out 
+test = l64.Solution()
+out = test.minPathSum(n)
+print 'output:', out
