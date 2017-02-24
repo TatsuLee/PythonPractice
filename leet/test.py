@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*-
 
 
-import l64
-n = [[1, 2, 1], [0, 1, 3]]
+import l71
+n = '/home/..//./'
+n = '/a/./b/../../c/'
 print 'input:', n
-test = l64.Solution()
-out = test.minPathSum(n)
+test = l71.Solution()
+out = test.simplifyPath(n)
 print 'output:', out
