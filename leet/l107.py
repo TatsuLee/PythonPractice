@@ -13,5 +13,19 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        res, current = [], root
-        if root..left
+        if root is None:
+            return []
+        res, clevel, nlevel = [[]], [root], []
+        while True:
+            for node in clevel:
+                res[-1].append(node.val)
+                if node.left:
+                    nlevel.append(node.left)
+                if node.right:
+                    nlevel.append(node.right)
+            # traversal on next level
+            if nlevel == []:
+                return list(reversed(res))
+            clevel = nlevel
+            nlevel = []
+            res.append([])
